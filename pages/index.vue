@@ -17,7 +17,17 @@
       <p class="subtitle">{{ $t('welcome') }}</p>
       <p
         class="subtitle"
-        @click="increment">{{ counter }}</p>
+        @click="increment">
+        {{ counter }}
+      </p>
+      <v-btn
+        flat 
+        icon
+        color="secondary"
+        @click="switchMode"
+      >
+        <v-icon>cached</v-icon>
+      </v-btn>
       <div class="links">
         <nuxt-link
           v-for="locale in $i18n.locales"
@@ -54,7 +64,7 @@ export default {
       if (locale === 'fa') this.$vuetify.rtl = true
       else this.$vuetify.rtl = false
     },
-    ...mapMutations(['increment'])
+    ...mapMutations(['increment', 'switchMode'])
   }
 }
 </script>

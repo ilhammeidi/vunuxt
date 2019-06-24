@@ -2,12 +2,16 @@ import languages from '~/static/lang/languages'
 
 export const state = () => ({
   counter: 0,
-  langs: languages
+  langs: languages,
+  darkMode: false
 })
 
 export const mutations = {
   increment(state) {
     state.counter++
+  },
+  switchMode(state) {
+    state.darkMode = !state.darkMode
   }
 }
 export const getters = {

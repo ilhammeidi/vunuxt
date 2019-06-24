@@ -2,13 +2,13 @@ import Vue from 'vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
-import '../assets/style/app.styl'
+import '..\\assets\\style\\app.styl'
 
-import '../assets/main.css'
+import '..\\assets\\main.css'
 
-import '../node_modules/font-awesome/css/font-awesome.css'
+import '..\\node_modules\\font-awesome\\css\\font-awesome.css'
 
-import _6f6c098b from '../layouts/default.vue'
+import _6f6c098b from '..\\layouts\\default.vue'
 
 const layouts = { "_default": _6f6c098b }
 

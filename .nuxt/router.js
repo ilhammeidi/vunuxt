@@ -2,8 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _4c9aaf00 = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
-const _2b19f478 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _7113a44a = () => interopDefault(import('..\\pages\\inspire.vue' /* webpackChunkName: "pages_inspire" */))
+const _b9f8977c = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
 
 Vue.use(Router)
 
@@ -81,27 +81,27 @@ export function createRouter() {
 
     routes: [{
       path: "/en/inspire",
-      component: _4c9aaf00,
+      component: _7113a44a,
       name: "inspire___en"
     }, {
       path: "/fa/inspire",
-      component: _4c9aaf00,
+      component: _7113a44a,
       name: "inspire___fa"
     }, {
       path: "/inspire",
-      component: _4c9aaf00,
+      component: _7113a44a,
       name: "inspire___fr"
     }, {
       path: "/en/",
-      component: _2b19f478,
+      component: _b9f8977c,
       name: "index___en"
     }, {
       path: "/fa/",
-      component: _2b19f478,
+      component: _b9f8977c,
       name: "index___fa"
     }, {
       path: "/",
-      component: _2b19f478,
+      component: _b9f8977c,
       name: "index___fr"
     }],
 

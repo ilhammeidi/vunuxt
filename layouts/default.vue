@@ -2,7 +2,7 @@
   <v-app
     id="keep"
     :class="{ 'custom-font': getDir($i18n.locale)==='rtl' }"
-    dark
+    :dark="darkMode"
   >
     <v-navigation-drawer
       v-model="drawer"
@@ -122,7 +122,7 @@ export default {
     ]
   }),
   computed: {
-    ...mapState(['langs']),
+    ...mapState(['langs', 'darkMode']),
     ...mapGetters(['getDir'])
   },
   methods: {
