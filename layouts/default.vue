@@ -125,6 +125,10 @@ export default {
     ...mapState(['langs', 'darkMode']),
     ...mapGetters(['getDir'])
   },
+  mounted() {
+    console.log('beres')
+    document.getElementById('preloader').remove()
+  },
   methods: {
     changeBackgroundColor: function() {
       this.$vuetify.theme.background = '#79b9c6'

@@ -20,6 +20,9 @@
         @click="increment">
         {{ counter }}
       </p>
+      <NuxtLink to="/inspire">
+        Go to inspire
+      </NuxtLink>
       <v-btn
         flat 
         icon

@@ -6,6 +6,9 @@
         alt="Vuetify.js" 
         class="mb-5"
       >
+      <NuxtLink to="/">
+        Go to home
+      </NuxtLink>
       <blockquote class="blockquote">
         &#8220;First, solve the problem. Then, write the code.&#8221;
         <footer>
