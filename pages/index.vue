@@ -9,6 +9,7 @@
         :class="{ 'custom-font': getDir($i18n.locale)==='rtl' }"
         class="title"
       >
+        <span class="deco">dasdads</span>
         {{ $t('home_page.app_name') }}
       </h1>
       <h2 class="subtitle">
@@ -72,7 +73,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .container {
   min-height: 100vh;
   display: flex;
@@ -89,6 +90,10 @@ export default {
   font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
+  .deco {
+    color: aqua;
+    padding: 20px;
+  }
 }
 
 .subtitle {
