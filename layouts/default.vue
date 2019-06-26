@@ -66,6 +66,7 @@
       class=""
       app
       fixed
+      dark
       clipped-left>
       <v-toolbar-side-icon
         class="fifthColor--text"
